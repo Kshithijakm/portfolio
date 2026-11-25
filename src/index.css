@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    @apply bg-blue-600/20 text-blue-700 dark:bg-blue-400/25 dark:text-blue-200;
+  }
+}
+
+/* Subtle engineering grid background for the Hero section */
+.hero-grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(15, 23, 42, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.dark .hero-grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Secondary fine sub-grid overlay */
+.hero-subgrid-bg {
+  background-image:
+    radial-gradient(circle, rgba(37, 99, 235, 0.16) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: -0.5px -0.5px;
+}
+
+.dark .hero-subgrid-bg {
+  background-image:
+    radial-gradient(circle, rgba(96, 165, 250, 0.18) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: -0.5px -0.5px;
+}
