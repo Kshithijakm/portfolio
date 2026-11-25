@@ -72,7 +72,7 @@ export function Hero() {
             </a>
 
             <a
-              href={personalInfo.resumeUrl}
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               download="Kshithija_KM_Resume.pdf"
